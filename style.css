@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+  font-family: Arial, sans-serif;
+  overflow: auto; /* Permitir desplazamiento en pantallas grandes */
+  background-color: #000000;
+}
+
+header {
+  background-color: #ffffff;
+  height: 610px; /* Ajusta este valor según lo necesites */
+  position: relative; /* Permite que el iframe se coloque absolutamente */
+  overflow: hidden; /* Evita el desbordamiento del contenido */
+}
+
+footer {
+  background-color: #000000;
+  padding: 60px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  margin-top: auto; /* Asegura que el footer esté al final */
+  position: relative; /* Cambiado a relative */
+}
+
+
+main {
+  flex: 1; /* Hace que el main ocupe el espacio restante */
+  padding: 20px; /* Espaciado interior del main */
+  overflow: auto; /* Permitir desplazamiento dentro del main si es necesario */
+}
+
+.overlay {
+  position: absolute; /* Superpone el contenedor sobre el video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0); /* Capa transparente */
+  z-index: 10; /* Asegura que esté encima del video */
+}
+
+.sqs-block-content {
+  height: 100%; /* Asegura que el contenido ocupe toda la altura del contenedor */
+}
+
+.embed-block-wrapper.video {
+  width: 100%; /* Asegura que el contenedor del video ocupe toda la anchura */
+  height: 100%; /* Asegura que el contenedor del video ocupe toda la altura */
+  position: relative; /* Necesario para que los elementos posicionados dentro de él se alineen correctamente */
+}
+
+.embed-block-wrapper.video video {
+  width: 100%; /* Asegura que el video ocupe toda la anchura */
+  height: 100%; /* Asegura que el video ocupe toda la altura */
+  object-fit: cover; /* Mantiene la proporción y ocupa todo el contenedor */
+  border: none; /* Elimina el borde del video */
+}
+
+.logo_main {
+  position: absolute; /* Cambiado a absolute para poder posicionar mejor en relación al video */
+  height: auto; /* Permite que la altura se ajuste según la imagen */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición */
+  bottom: 20px; /* Asegúrate de ajustar este valor según tu diseño */
+  z-index: 15; /* Asegura que esté por encima del overlay */
+}
+
+.logo_main img {
+  height: 335px; /* Mantiene la altura específica */
+}
+
+.logocabeza {
+  position: absolute; /* Asegúrate de que esté en el mismo contexto de posicionamiento que el video */
+  top: 15px;
+  left: 100px;
+  z-index: 15; /* Asegura que esté por encima del overlay */
+}
+
+.logocabeza img {
+  height: 80px; 
+}
+
+.instagram-icon1 {
+  width: 50px;
+  position: absolute; 
+  top: 30px; 
+  right: 235px; 
+  z-index: 15; /* Asegura que esté por encima del overlay */
+}
+
+
+
+
+
+
+
+.titulo {
+  text-align: center;           
+  font-size: 70px;              
+}
+
+
+
+.content1, .content2 {
+  display: flex;
+  padding: 50px 0;
+  margin-left: 350px;
+  margin-right: 350px;
+  align-items: center; 
+  color: #ffffff;
+}
+
+.content1 {
+  flex-direction: row; 
+}
+
+.content2 {
+  flex-direction: row-reverse; 
+}
+
+.text, .text2 {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 400px; 
+  text-align: left; 
+}
+
+.text {
+  margin-left: 50px; 
+}
+
+.text h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  margin-right: 115px; 
+}
+
+.text2 h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 550px;
+  width: 550px;
+}
+
+
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.steam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /* Ajusta el contenedor al tamaño de la imagen */
+}
+
+/* Customize height and width */
+.custom-size {
+  width: 1135px; /* Cambia el ancho deseado */
+  height: 650px; /* Cambia la altura deseada */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: -30px; /* Ajusta según el espacio deseado desde el borde izquierdo */
+}
+
+.next {
+  right: -30px; /* Ajusta según el espacio deseado desde el borde derecho */
+}
+
+.prev:hover, .next:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+/* Estilos Generales */
+.page-section {
+  width: 100%;
+  padding-top: 1vmax;
+  padding-bottom: 1vmax;
+  position: relative;
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+/* Sección de Imagen de Fondo */
+.background-image-section {
+  height: 430px;
+  background-image: url('futura imagen.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* Imagen en la Esquina Inferior Derecha */
+.image-block-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.image-container {
+  position: relative;
+  padding-bottom: 27.6%;
+  overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
+  -webkit-mask-image: radial-gradient(circle, white, black);
+}
+
+.unity-logo {
+  display: block;
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+
+
+
+.logopie {
+  height: 200px;
+  display: flex;
+  justify-content: center;      /* Centra la imagen horizontalmente */
+  align-items: center;          /* Centra la imagen verticalmente */
+  margin-top: 20px;            /* Espacio superior */
+}
+
+.titulopie {
+  text-align: center;           /* Centra el texto */
+  font-size: 70px;              /* Tamaño de fuente */
+  margin: 30px 0;              /* Espacio arriba y abajo del título */
+}
+
+.boton-pagina {
+  text-align: center;           /* Centra el botón */
+  margin: 20px auto;            /* Centra la sección y da margen superior e inferior */
+  background-color: #fff;       /* Color de fondo */
+  width: 245px;                 /* Ancho específico */
+  height: auto;                 /* Alto adaptable */
+}
+
+.boton-pagina button {
+  font-size: 20px;              /* Tamaño de fuente del botón */
+  color: #000000;               /* Color del texto */
+  background-color: #ffffff;       /* Color de fondo del botón */
+  border: none;                 /* Sin borde */
+  padding: 10px 20px;           /* Espacio interno */
+  cursor: pointer;              /* Muestra un cursor de mano */
+  text-decoration: none;        /* Sin subrayado */
+  border-radius: 5px;           /* Bordes redondeados */
+}
+
+.boton-pagina button:hover {
+  background-color:   #ccc;       /* Color de fondo cuando se pasa el cursor */
+}
+
+.instagram-icon2 {
+  display: flex;
+  justify-content: center;       /* Centra el icono de Instagram */
+  margin-top: 20px;             /* Espacio superior */
+}
+
+.instagram-icon2 img {
+  height: 35px;                 /* Controla la altura del icono */
+  width: auto;                  /* Mantiene la proporción del icono */
+}
+
+.informacionpie {
+  text-align: center;        /* Centra el texto dentro del contenedor */
+  font-size: 20px;           /* Tamaño de fuente */
+  margin: 10px auto;         /* Centra el contenedor horizontalmente */
+  width: 100%;                /* Ajusta el ancho del contenedor para mayor centrado */
+  max-width: 903px;          /* Limita el ancho máximo en pantallas grandes */
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
