@@ -1,0 +1,693 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  background-color: #000000;
+}
+
+header {
+  background-color: #000000;
+  height: 610px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #000000;
+  padding: 60px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  z-index: 10;
+}
+
+.sqs-block-content {
+  height: 100%;
+}
+
+.embed-block-wrapper.video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.embed-block-wrapper.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.logo_main {
+  position: absolute;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.logo_main img {
+  height: 335px;
+}
+
+.logocabeza {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  z-index: 15;
+}
+
+.logocabeza img {
+  height: 80px;
+}
+
+.instagram-icon1 {
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 235px;
+  z-index: 15;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 70px;
+}
+
+.content1, .content2 {
+  display: flex;
+  padding: 50px 0;
+  margin-left: 350px;
+  margin-right: 350px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.content1 {
+  flex-direction: row;
+}
+
+.content2 {
+  flex-direction: row-reverse;
+}
+
+.text, .text2 {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 400px;
+  text-align: left;
+}
+
+.text {
+  margin-left: 50px;
+}
+
+.text h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  margin-right: 115px;
+}
+
+.text2 h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 550px;
+  width: 550px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.steam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.custom-size {
+  width: 1135px;
+  height: 650px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: -30px;
+}
+
+.next {
+  right: -30px;
+}
+
+.prev:hover, .next:hover {
+  color: rgb(255, 255, 255);
+}
+
+.page-section {
+  width: 100%;
+  padding-top: 1vmax;
+  padding-bottom: 1vmax;
+  position: relative;
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.background-image-section {
+  height: 430px;
+  background-image: url('futura imagen.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.image-block-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.image-container {
+  position: relative;
+  padding-bottom: 27.6%;
+  overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
+  -webkit-mask-image: radial-gradient(circle, white, black);
+}
+
+.logopie {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.titulopie {
+  text-align: center;
+  font-size: 70px;
+  margin: 30px 0;
+}
+
+.boton-pagina {
+  text-align: center;
+  margin: 20px auto;
+  background-color: #fff;
+  width: 245px;
+  height: auto;
+}
+
+.boton-pagina button {
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton-pagina button:hover {
+  background-color:   #ccc;
+}
+
+.instagram-icon2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.instagram-icon2 img {
+  height: 35px;
+  width: auto;
+}
+
+.informacionpie {
+  text-align: center;
+  font-size: 17px;
+}
+
+.informacionpie span {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.informacionpie span:hover {
+  color: #1da1f2;
+}
+
+.informacion1 {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.informacion2 {
+  display: flex;
+}
+
+/* Media Queries para Pantallas Más Pequeñas */
+
+/* Pantallas menores a 1765px */
+@media (max-width: 1765px) {
+  header {
+    height: 550px;
+  }
+
+  .logo_main img {
+    height: 300px;
+  }
+
+  .logocabeza img {
+    height: 70px;
+  }
+
+  .instagram-icon1 {
+    width: 40px;
+    top: 25px;
+    right: 200px;
+  }
+
+  .titulo {
+    font-size: 60px;
+  }
+
+  .content1, .content2 {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .text, .text2 {
+    font-size: 16px;
+  }
+
+  .text h2 {
+    font-size: 40px;
+  }
+
+  .image {
+    height: 480px;
+    width: 480px;
+  }
+
+  .video {
+    margin-bottom: 40px;
+  }
+
+  .custom-size {
+    width: 1024px;
+    height: 600px;
+  }
+
+  .boton-pagina {
+    width: 200px;
+  }
+
+  .titulopie {
+    font-size: 60px;
+  }
+
+  .informacionpie span {
+    font-size: 15px;
+  }
+}
+
+/* Pantallas menores a 1400px */
+@media (max-width: 1400px) {
+  header {
+    height: 500px;
+  }
+
+  .logo_main img {
+    height: 270px;
+  }
+
+  .logocabeza img {
+    height: 60px;
+  }
+
+  .instagram-icon1 {
+    width: 35px;
+    top: 20px;
+    right: 180px;
+  }
+
+  .titulo {
+    font-size: 50px;
+  }
+
+  .content1, .content2 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .text, .text2 {
+    font-size: 14px;
+  }
+
+  .text h2 {
+    font-size: 35px;
+  }
+
+  .image {
+    height: 450px;
+    width: 450px;
+  }
+
+  .video {
+    margin-bottom: 30px;
+  }
+
+  .custom-size {
+    width: 900px;
+    height: 500px;
+  }
+
+  .boton-pagina {
+    width: 180px;
+  }
+
+  .titulopie {
+    font-size: 50px;
+  }
+
+  .informacionpie span {
+    font-size: 14px;
+  }
+}
+
+/* Pantallas menores a 1080px */
+@media (max-width: 1080px) {
+  header {
+    height: 450px;
+  }
+
+  .logo_main img {
+    height: 240px;
+  }
+
+  .logocabeza img {
+    height: 50px;
+  }
+
+  .instagram-icon1 {
+    width: 30px;
+    top: 15px;
+    right: 150px;
+  }
+
+  .titulo {
+    font-size: 45px;
+  }
+
+  .content1, .content2 {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .text, .text2 {
+    font-size: 12px;
+  }
+
+  .text h2 {
+    font-size: 30px;
+  }
+
+  .image {
+    height: 400px;
+    width: 400px;
+  }
+
+  .video {
+    margin-bottom: 20px;
+  }
+
+  .custom-size {
+    width: 800px;
+    height: 450px;
+  }
+
+  .boton-pagina {
+    width: 160px;
+  }
+
+  .titulopie {
+    font-size: 45px;
+  }
+
+  .informacionpie span {
+    font-size: 12px;
+  }
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+
+  .logo_main img {
+    height: 200px;
+  }
+
+  .logocabeza img {
+    height: 40px;
+  }
+
+  .instagram-icon1 {
+    width: 25px;
+    top: 10px;
+    right: 120px;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .content1, .content2 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .text, .text2 {
+    font-size: 10px;
+  }
+
+  .text h2 {
+    font-size: 25px;
+  }
+
+  .image {
+    height: 350px;
+    width: 350px;
+  }
+
+  .video {
+    margin-bottom: 10px;
+  }
+
+  .custom-size {
+    width: 700px;
+    height: 400px;
+  }
+
+  .boton-pagina {
+    width: 140px;
+  }
+
+  .titulopie {
+    font-size: 40px;
+  }
+
+  .informacionpie span {
+    font-size: 10px;
+  }
+}
+
+/* Estilos para pantallas de hasta 1090px */
+@media only screen and (max-width: 1010px) {
+  body {
+    margin: 0; /* Asegura que no haya márgenes generales */
+    padding: 0; /* Asegura que no haya paddings generales */
+  }
+
+  header {
+    height: auto; /* Ajusta la altura del header */
+    padding-bottom: 0; /* Elimina cualquier padding inferior innecesario */
+    margin-bottom: 0; /* Evita cualquier margen que cause espacio extra */
+  }
+
+  .logo_main {
+    margin: 0; /* Elimina márgenes del contenedor del logo */
+    padding: 0; /* Elimina padding del contenedor del logo */
+    display: flex; /* Asegura que el logo se ajuste correctamente */
+    justify-content: center; /* Centra el logo si es necesario */
+  }
+
+  .logo_main img {
+    height: 200px; /* Ajusta el tamaño del logo */
+    margin: 0; /* Elimina margen extra alrededor de la imagen */
+    padding: 0; /* Elimina padding extra alrededor de la imagen */
+  }
+
+  .content1, .content2 {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .text, .text2 {
+    font-size: 16px; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .instagram-icon1 {
+    width: 40px;
+    top: 20px;
+    right: 50px;
+  }
+
+  /* Aseguramos que el Slideshow no se desborde */
+  .slideshow-container {
+    width: 100%; /* Asegura que el contenedor de la presentación de diapositivas sea del 100% */
+    max-width: 100%; /* Limita el ancho máximo */
+    overflow: hidden; /* Evita que el contenido se desborde */
+  }
+
+  /* Ajuste para las imágenes dentro del Slideshow */
+  .custom-size {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .logopie img {
+    height: 120px;
+  }
+
+  .titulopie {
+    font-size: 30px;
+  }
+
+  .informacionpie {
+    font-size: 16px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas de hasta 768px (específicamente para dispositivos más pequeños) */
+@media only screen and (max-width: 768px) {
+  .content1, .content2 {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .text, .text2 {
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logo_main img {
+    height: 150px; /* Ajusta el tamaño del logo */
+    margin: 0; /* Elimina cualquier margen que cause espacio extra */
+    padding: 0; /* Elimina cualquier padding adicional */
+  }
+
+  .instagram-icon1 {
+    width: 35px;
+    top: 15px;
+    right: 20px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .custom-size {
+    width: 100%;
+    height: auto;
+  }
+}
+
