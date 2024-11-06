@@ -668,9 +668,13 @@ img {
   }
 
   .logo_main img {
-    height: 150px; /* Ajusta el tamaño del logo */
+    height: 100px; /* Ajusta el tamaño del logo */
     margin: 0; /* Elimina cualquier margen que cause espacio extra */
     padding: 0; /* Elimina cualquier padding adicional */
+  }
+
+  .logocabeza {
+    left: 30px;
   }
 
   .instagram-icon1 {
@@ -690,4 +694,6 @@ img {
     height: auto;
   }
 }
+
+
 
