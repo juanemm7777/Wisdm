@@ -136,7 +136,7 @@ main {
 }
 
 .text2 {
-  margin-right: 115px;
+  margin-right: 50px;
 }
 
 .text2 h2 {
@@ -319,6 +319,7 @@ img {
 
 /* Media Queries para Pantallas Más Pequeñas */
 
+
 /* Pantallas menores a 1765px */
 @media (max-width: 1765px) {
   header {
@@ -352,7 +353,7 @@ img {
     font-size: 16px;
   }
 
-  .text h2 {
+  .text h2, .text2 h2 {
     font-size: 40px;
   }
 
@@ -416,7 +417,7 @@ img {
     font-size: 14px;
   }
 
-  .text h2 {
+  .text h2, .text2 h2 {
     font-size: 35px;
   }
 
@@ -480,7 +481,7 @@ img {
     font-size: 12px;
   }
 
-  .text h2 {
+  .text h2, .text2 h2 {
     font-size: 30px;
   }
 
@@ -508,70 +509,6 @@ img {
 
   .informacionpie span {
     font-size: 12px;
-  }
-}
-
-/* Pantallas menores a 768px */
-@media (max-width: 768px) {
-  header {
-    height: 400px;
-  }
-
-  .logo_main img {
-    height: 200px;
-  }
-
-  .logocabeza img {
-    height: 40px;
-  }
-
-  .instagram-icon1 {
-    width: 25px;
-    top: 10px;
-    right: 120px;
-  }
-
-  .titulo {
-    font-size: 40px;
-  }
-
-  .content1, .content2 {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .text, .text2 {
-    font-size: 10px;
-  }
-
-  .text h2 {
-    font-size: 25px;
-  }
-
-  .image {
-    height: 350px;
-    width: 350px;
-  }
-
-  .video {
-    margin-bottom: 10px;
-  }
-
-  .custom-size {
-    width: 700px;
-    height: 400px;
-  }
-
-  .boton-pagina {
-    width: 140px;
-  }
-
-  .titulopie {
-    font-size: 40px;
-  }
-
-  .informacionpie span {
-    font-size: 10px;
   }
 }
 
@@ -608,7 +545,7 @@ img {
   }
 
   .text, .text2 {
-    font-size: 16px; 
+    font-size: 16px; /* Ajuste de fuente para ambos */
     margin-left: 0;
     margin-right: 0;
   }
@@ -662,7 +599,7 @@ img {
   }
 
   .text, .text2 {
-    font-size: 14px;
+    font-size: 14px; /* Asegura tamaño de fuente igual */
     margin-left: 0;
     margin-right: 0;
   }
@@ -694,6 +631,5 @@ img {
     height: auto;
   }
 }
-
 
 
