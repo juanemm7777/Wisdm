@@ -97,11 +97,6 @@ main {
   z-index: 15;
 }
 
-.titulo {
-  text-align: center;
-  font-size: 70px;
-}
-
 .content1, .content2 {
   display: flex;
   padding: 50px 0;
@@ -340,10 +335,6 @@ img {
     right: 200px;
   }
 
-  .titulo {
-    font-size: 60px;
-  }
-
   .content1, .content2 {
     margin-left: 250px;
     margin-right: 250px;
@@ -404,10 +395,6 @@ img {
     right: 180px;
   }
 
-  .titulo {
-    font-size: 50px;
-  }
-
   .content1, .content2 {
     margin-left: 200px;
     margin-right: 200px;
@@ -466,10 +453,6 @@ img {
     width: 30px;
     top: 15px;
     right: 150px;
-  }
-
-  .titulo {
-    font-size: 45px;
   }
 
   .content1, .content2 {
