@@ -495,7 +495,7 @@ img {
   }
 
   .custom-size {
-    width: 800px;
+    width: 850px;
     height: 450px;
   }
 
@@ -588,6 +588,29 @@ img {
   .copyright p {
     font-size: 14px;
   }
+
+  /* Aseguramos que las flechas estén visibles y ajustadas para pantallas pequeñas */
+  .prev, .next {
+    display: block; /* Asegura que las flechas se muestren */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Puedes ajustar el tamaño según lo necesites */
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px; /* Ajusta el tamaño de las flechas */
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  .prev {
+    left: -10px; /* Ajusta la posición si es necesario */
+  }
+
+  .next {
+    right: -20px; /* Ajusta la posición si es necesario */
+  }
 }
 
 /* Estilos para pantallas de hasta 768px (específicamente para dispositivos más pequeños) */
@@ -631,5 +654,4 @@ img {
     height: auto;
   }
 }
-
 
