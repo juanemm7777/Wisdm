@@ -121,22 +121,24 @@ main {
   text-align: left;
 }
 
+.text, .text2 {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: left;
+}
+
+.text, .text2 h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
 .text {
   margin-left: 50px;
 }
 
-.text h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
 .text2 {
   margin-right: 50px;
-}
-
-.text2 h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
 }
 
 .image {
