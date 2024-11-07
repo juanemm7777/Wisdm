@@ -291,6 +291,8 @@ img {
 .informacionpie {
   text-align: center;
   font-size: 17px;
+  max-width: 1040px; /* Ajusta el valor según el ancho deseado */
+  margin: auto;
 }
 
 .informacionpie span {
@@ -302,6 +304,7 @@ img {
 .informacionpie span:hover {
   color: #1da1f2;
 }
+
 
 .informacion1 {
   display: flex;
