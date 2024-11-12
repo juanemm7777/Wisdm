@@ -16,7 +16,7 @@ body {
 
 header {
   background-color: #000000;
-  height: 600px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
@@ -321,7 +321,7 @@ img {
 /* Pantallas menores a 1765px */
 @media (max-width: 1765px) {
   header {
-    height: 550px;
+    height: 250px;
   }
 
   .logo_main img {
@@ -381,7 +381,7 @@ img {
 /* Pantallas menores a 1400px */
 @media (max-width: 1400px) {
   header {
-    height: 500px;
+    height: 200px;
   }
 
   .logo_main img {
@@ -441,7 +441,7 @@ img {
 /* Pantallas menores a 1080px */
 @media (max-width: 1080px) {
   header {
-    height: 450px;
+    height: 150px;
   }
 
   .logo_main img {
