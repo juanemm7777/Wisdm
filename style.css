@@ -39,32 +39,7 @@ main {
   overflow: auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0);
-  z-index: 10;
-}
 
-.sqs-block-content {
-  height: 100%;
-}
-
-.embed-block-wrapper.video {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.embed-block-wrapper.video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: none;
-}
 
 .logo_main {
   position: absolute;
@@ -506,7 +481,7 @@ img {
   }
 
   header {
-    height: auto; /* Ajusta la altura del header */
+    height: 300px; /* Ajusta la altura del header */
     padding-bottom: 0; /* Elimina cualquier padding inferior innecesario */
     margin-bottom: 0; /* Evita cualquier margen que cause espacio extra */
   }
@@ -638,5 +613,10 @@ img {
   .custom-size {
     width: 100%;
     height: auto;
+  }
+
+  
+  header {
+  height: 150px;
   }
 }
