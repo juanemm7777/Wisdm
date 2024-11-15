@@ -114,8 +114,8 @@ main {
 }
 
 .image {
-  height: 550px;
-  width: 550px;
+  height: 350px;
+  width: 350px;
 }
 
 .video {
@@ -411,7 +411,7 @@ img {
   }
 
   .logocabeza {
-    left: 30px;
+    left: 20px;
   }
 
   .instagram-icon1 {
